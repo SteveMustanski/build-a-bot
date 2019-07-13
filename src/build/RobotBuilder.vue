@@ -72,6 +72,9 @@ function getNextValidIndex(index, length) {
 
 export default {
   name: "RobotBuilder",
+  created() {
+    console.log("lifecyle hook - component created");
+  },
   data() {
     return {
       availableParts,
