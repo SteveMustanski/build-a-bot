@@ -61,16 +61,17 @@ export default {
     };
   },
   mixins: [createdHookMixin],
-  computed: {},
-  headBorderStyle() {
-    return {
-      border: this.selectedRobot.head.onSale
-        ? "3px solid red"
-        : "3px solid #aaa"
-    };
-  },
-  saleBorderClass() {
-    return this.selectedRobot.head.onSale ? "sale-border" : "";
+  computed: {
+    headBorderStyle() {
+      return {
+        border: this.selectedRobot.head.onSale
+          ? "3px solid red"
+          : "3px solid #aaa"
+      };
+    },
+    saleBorderClass() {
+      return this.selectedRobot.head.onSale ? "sale-border" : "";
+    }
   },
 
   methods: {
