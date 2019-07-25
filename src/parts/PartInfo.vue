@@ -1,0 +1,23 @@
+<template>
+  <div>
+    <h1>{{ part.title }}</h1>
+    <h2>{{ part.description}}</h2>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "PartInfo",
+  data() {
+    return {
+      part: {
+        title: "Part Title",
+        description: "Part Description"
+      }
+    };
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+</style>
