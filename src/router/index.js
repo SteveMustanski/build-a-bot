@@ -22,7 +22,8 @@ export default new Router({
     {
       path: "/parts/:partType/:id",
       name: "Parts",
-      component: PartInfo
+      component: PartInfo,
+      props: true
     }
   ]
 });
