@@ -3,7 +3,7 @@
     <router-link
       :to="{name: 'Parts',params: { id: this.selectedPart.id, partType: this.selectedPart.type }}"
     >
-      <img @click="showPartInfo" :src="selectedPart.src" title="arm" />
+      <img :src="selectedPart.src" title="arm" />
     </router-link>
     <button @click="selectPreviousPart()" class="prev-selector"></button>
     <button @click="selectNextPart()" class="next-selector"></button>
