@@ -11,7 +11,10 @@
 
 <script>
 export default {
-  name: "HomePage"
+  name: "HomePage",
+  created() {
+    console.log(process.env.VUE_APP_TEST);
+  }
 };
 </script>
 
