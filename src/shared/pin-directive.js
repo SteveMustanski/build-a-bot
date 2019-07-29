@@ -1,15 +1,7 @@
-function applyStyle(element, binding) {
+// automatically binds to bind and update lifecycle hooks
+export default function (element, binding) {
   Object.keys(binding.value).forEach(position => {
     element.style[position] = binding.value[position];
   });
   element.style.position = "absolute";
 }
-
-export default {
-  bind: (element, binding) => {
-    applyStyle(element, binding);
-  },
-  update: (element, binding) => {
-    applyStyle(element, binding);
-  }
-};
