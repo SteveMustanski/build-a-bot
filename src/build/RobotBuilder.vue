@@ -20,7 +20,7 @@
     </div>
 
     <div class="top-row">
-      <div :class="[saleBorderClass, 'top', 'part']">
+      <div :class="[ 'top', 'part']">
         <!-- <div class="robot-name">
           {{selectedRobot.head.title}}
           <span v-if="selectedRobot.head.onSale" class="sale">Sale!</span>
@@ -105,9 +105,6 @@ export default {
     },
     availableParts() {
       return this.$store.state.robots.parts;
-    },
-    saleBorderClass() {
-      return this.selectedRobot.head.onSale ? "sale-border" : "";
     }
   },
 
